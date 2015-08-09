@@ -1,3 +1,8 @@
+# Title: ASM to Shellcode converter
+# File: asm2shellcode.sh
+# Author: Guillaume Kaddouch
+# SLAE-681
+
 #!/bin/bash
 clear
 

@@ -1,4 +1,6 @@
-; linux reverse shell tcp
+; Title: Linux x86 Reverse Shell TCP shellcode (77 bytes)
+; Author: Guillaume Kaddouch
+; SLAE-681
 
 global _start
 
