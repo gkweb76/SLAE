@@ -1,4 +1,4 @@
-# Title: Port to shellcode converter
+# Title: Port/IP to shellcode converter
 # File: port_converter.py
 # Author: Guillaume Kaddouch
 # SLAE-681
