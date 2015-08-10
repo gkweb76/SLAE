@@ -45,17 +45,9 @@ shellcode:
 
 jump1:
 	call dword 0x2		; jump to 'shellcode'
-
+	mypath db "/etc/passwd"
 	; string misinterpreted by ndisasm as instructions
 	; opcodes = \x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64\x00
 	; $ echo '\x2f\x65\x74\x63\x2f\x70\x61\x73\x73\x77\x64\x00' | sed 's/x//g' | sed 's/\\//g' = 2f6574632f70617373776400
 	; ./hex2reversestring.py 2f6574632f70617373776400
 	; = /etc/passwd
-
-	das
-	gs jz 0xa4
-	das
-	jo 0xa5
-	jnc 0xb9
-	ja 0xac
-	db 0x00

