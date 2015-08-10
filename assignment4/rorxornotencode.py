@@ -1,10 +1,9 @@
+#!/usr/bin/python
+
 # Title: ROR/XOR/NOT encoder
 # File: rorxornotencode.py
 # Author: Guillaume Kaddouch
 # SLAE-681
-
-#!/usr/bin/python
-
 
 import sys
 

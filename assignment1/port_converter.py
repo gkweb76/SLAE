@@ -1,9 +1,9 @@
+#!/usr/bin/python
+
 # Title: Port to Shellcode converter
 # File: port_converter.py
 # Author: Guillaume Kaddouch
 # SLAE-681
-
-#!/usr/bin/python
 
 import socket, sys
 
