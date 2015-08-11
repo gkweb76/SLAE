@@ -8,7 +8,7 @@
 import sys
 
 shellcode = (
-"\x77\x6f\x6e"
+"\x77\x6f\x6e"					 # = now
 
 #push dword 0x6e776f64           ; = 'down'
 #"\x6e\x77\x6f\x64"
